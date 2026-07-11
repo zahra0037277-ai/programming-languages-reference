@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo "<script>
         alert('ثبت نام با موفقیت انجام شد');
-        window.location.href='login.html';
+        window.location.href='index.html';
         </script>";
 
         exit();
