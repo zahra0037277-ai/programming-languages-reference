@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>مرجع کامل Java</title>
+<style>
+    body{font-family:IranSans;background:#f4f5f7;margin:0}
+    header{background:#E76F00;color:#fff;padding:20px;text-align:center;font-size:28px}
+    .container{width:80%;margin:20px auto;background:#fff;padding:25px;border-radius:10px;box-shadow:0 0 10px #c9c9c9}
+    h2{color:#E76F00;margin-top:25px}
+    .section{background:#f0efe9;padding:20px;border-radius:8px;margin-top:10px}
+    code{background:#222;color:#00ff55;padding:10px;display:block;direction:ltr;border-radius:6px}
+    a{color:#1a73e8;text-decoration:none;font-weight:bold}
+    a:hover{text-decoration:underline}
+
+    .purchase-container {
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px 0;
+        text-align: center;
+        box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-buy {
+        background: linear-gradient(135deg, #E76F00, #f78418); 
+        color: white;
+        border: none;
+        padding: 15px 50px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(104, 33, 122, 0.4);
+    }
+
+    .btn-buy:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 6px 20px rgba(104, 33, 122, 0.6);
+    }
+
+    .btn-buy:active {
+        transform: scale(0.95); 
+    }
+</style>
+</head>
+<body>
+
+<header>مرجع کامل زبان Java</header>
+
+<div class="container">
+
+<h2>Java چیست؟</h2>
+<div class="section">
+Java یک زبان شی‌گرا، پایدار و کراس‌پلتفرم است که در اپلیکیشن‌های سازمانی، موبایل (Android)، سرور و Backend استفاده می‌شود.
+</div>
+
+<h2>کاربردهای Java</h2>
+<div class="section">
+<ul>
+<li>توسعه اپلیکیشن‌های اندروید</li>
+<li>برنامه‌های Enterprise و سازمانی</li>
+<li>Backend با Spring Framework</li>
+<li>سیستم‌های مالی و بانکی</li>
+</ul>
+</div>
+
+<h2>فریم‌ورک‌های مهم Java</h2>
+<div class="section">
+<ul>
+<li>Spring Boot – قدرتمند برای Backend</li>
+<li>Hibernate – ORM</li>
+<li>JavaFX – توسعه دسکتاپ</li>
+<li>Maven / Gradle – مدیریت پروژه</li>
+</ul>
+</div>
+
+<h2>بهترین منابع یادگیری</h2>
+<div class="section">
+<ul>
+<li><a >Oracle Docs</a></li>
+<li>Head First Java</li>
+<li><a>W3Schools Java</a></li>
+<li>Java Tutorial – Oracle</li>
+</ul>
+</div>
+
+<h2>نصب و ابزارها</h2>
+<div class="section">
+<ul>
+<li>JDK – نسخه 17 یا 21</li>
+<li>IDE: IntelliJ IDEA، Eclipse، NetBeans</li>
+</ul>
+</div>
+
+<h2>مثال ساده</h2>
+<div class="section">
+<code>
+class Main {<br>
+&nbsp;&nbsp;public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello Zahra!");<br>
+&nbsp;&nbsp;}<br>
+}
+</code>
+</div>
+
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="purchase-container">
+    <button class="btn-buy" onclick="checkCSharpLogin()">خرید دوره آموزشی java <br> 6000000</button>
+</div>
+<script>
+    function checkCSharpLogin() {
+        
+        const isLogged = localStorage.getItem("csharp_isLoggedIn");
+
+        if (isLogged === "true") {
+           
+            alert("خرید دوره java با موفقیت انجام شد! دوره در پنل شما فعال شد.");
+        } else {
+            
+            alert("برای خرید دوره، ابتدا باید در سایت عضو شوید.");
+           
+            window.location.href = "sabtnam.html"; 
+        }
+    }
+</script>
+
+</body>
+</html>

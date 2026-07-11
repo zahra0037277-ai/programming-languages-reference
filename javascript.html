@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>مرجع کامل JavaScript</title>
+<style>
+    body{font-family:IranSans;background:#f4f5f7;margin:0}
+    header{background:#F7DF1E;color:#000;padding:20px;text-align:center;font-size:28px;font-weight:bold}
+    .container{width:80%;margin:20px auto;background:#fff;padding:25px;border-radius:10px;box-shadow:0 0 10px #c9c9c9}
+    h2{color:#F7B600;margin-top:25px}
+    .section{background:#fff8d6;padding:20px;border-radius:8px;margin-top:10px}
+    code{background:#222;color:#00ff55;padding:10px;display:block;direction:ltr;border-radius:6px}
+    a{color:#1a73e8;text-decoration:none;font-weight:bold}
+    a:hover{text-decoration:underline}
+    
+  .purchase-container {
+        position: fixed; 
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px 0;
+        text-align: center;
+        box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-buy {
+        background: linear-gradient(135deg, #F7B600, #F7DF1E); 
+        color: white;
+        border: none;
+        padding: 15px 50px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 50px; 
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(104, 33, 122, 0.4);
+    }
+
+    .btn-buy:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(104, 33, 122, 0.6);
+    }
+
+    .btn-buy:active {
+        transform: scale(0.95); 
+        
+    }
+</style>
+</head>
+<body>
+
+<header>مرجع کامل JavaScript</header>
+
+<div class="container">
+
+<h2>JavaScript چیست؟</h2>
+<div class="section">
+JavaScript زبان اصلی وب است و برای فرانت‌اند، بک‌اند (Node.js)، اپ موبایل، دسکتاپ و حتی هوش مصنوعی استفاده می‌شود.
+</div>
+
+<h2>کاربردهای JavaScript</h2>
+<div class="section">
+<ul>
+<li>Front-end با React ،Vue ،Angular</li>
+<li>Back-end با Node.js</li>
+<li>ساخت اپ موبایل (React Native)</li>
+<li>اپ دسکتاپ (Electron)</li>
+</ul>
+</div>
+
+<h2>فریم‌ورک‌ها و کتابخانه‌ها</h2>
+<div class="section">
+<ul>
+<li>React</li>
+<li>Vue</li>
+<li>Angular</li>
+<li>Express.js</li>
+</ul>
+</div>
+
+<h2>بهترین منابع</h2>
+<div class="section">
+<ul>
+<li><a>MDN Web Docs</a></li>
+<li><a>JavaScript.info</a></li>
+<li>FrontendMasters</li>
+</ul>
+</div>
+
+<h2>مثال ساده</h2>
+<div class="section">
+<code>
+console.log("Hello Zahra!");<br><br>
+for(let i=0; i<5; i++) console.log(i);
+
+</code>
+</div>
+
+</div>
+<br><br><br><br><br><br><br><br>
+<div class="purchase-container">
+    <button class="btn-buy" onclick="checkCSharpLogin()">خرید دوره آموزشی javascript  <br> 6100000</button>
+</div>
+<script>
+    function checkCSharpLogin() {
+        
+        const isLogged = localStorage.getItem("csharp_isLoggedIn");
+
+        if (isLogged === "true") {
+           
+            alert("خرید دوره javascript با موفقیت انجام شد! دوره در پنل شما فعال شد.");
+        } else {
+           
+            alert("برای خرید دوره، ابتدا باید در سایت عضو شوید.");
+            
+            window.location.href = "sabtnam.html"; 
+        }
+    }
+</script>
+
+</body>
+</html>

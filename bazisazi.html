@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>کلاس آموزش بازی‌سازی از صفر</title>
+    <style>
+        body {
+            font-family: tahoma, sans-serif;
+            background: linear-gradient(135deg, #3f819d, #6da9bc, #75aec1);
+            margin: 0;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px 25px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.07);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            color: #7c3aed; /* بنفش برای حس بازی‌سازی */
+        }
+
+        .hero-text {
+            background: #ede9fe;
+            border-radius: 6px;
+            padding: 12px 15px;
+            border-right: 4px solid #7c3aed;
+            margin-bottom: 20px;
+        }
+
+        .hero-text strong {
+            color: #7c3aed;
+        }
+
+        p {
+            line-height: 1.9;
+            color: #444;
+            font-size: 14px;
+        }
+
+        ul {
+            padding-right: 18px;
+            font-size: 14px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .highlight-box {
+            background: #bacff9;
+            border-radius: 6px;
+            padding: 10px 15px;
+            border-right: 4px solid #5887d3;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .form-box {
+            margin-top: 25px;
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 15px 18px;
+            border: 1px solid #e5e7eb;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 3px;
+            font-size: 13px;
+            color: #333;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 7px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            border: 1px solid #cbd5e1;
+            font-family: inherit;
+            font-size: 13px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+
+        .btn {
+            background: #7c3aed;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: #5b21b6;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .info-bar {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .info-bar span {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 15px 0 25px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .tag-list {
+            margin: 10px 0;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eef2ff;
+            color: #3730a3;
+            padding: 3px 8px;
+            border-radius: 999px;
+            margin: 2px 3px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <h1>کلاس آموزش بازی‌سازی از صفر</h1>
+
+    <div class="hero-text">
+        <p>
+            اگر همیشه دوست داشتی <strong>بازی خودت را بسازی</strong> و فقط به بازی کردن
+            بسنده نکنی، این کلاس دقیقاً برای توست. در این دوره، مرحله‌به‌مرحله یاد می‌گیری
+            چطور با استفاده از یک موتور بازی‌سازی محبوب (مثل <strong>Unity</strong> یا
+            <strong>Godot</strong>)، از یک ایده ساده به یک بازی واقعی روی کامپیوتر یا موبایل برسی.
+        </p>
+        <p>
+            قرار نیست از همان روز اول با مباحث سخت و پیچیده روبه‌رو شوی. همه چیز با زبان
+            ساده، مثال‌های قابل فهم و پروژه‌های کوچک توضیح داده می‌شود تا کم‌کم وارد دنیا‌ی
+            جذاب بازی‌سازی شوی.
+        </p>
+    </div>
+<h2>بازی‌سازی یعنی چی؟</h2>
+    <p>
+        بازی‌سازی یعنی ترکیب <strong>داستان، گرافیک، صدا و برنامه‌نویسی</strong> برای ساختن یک
+        تجربه سرگرم‌کننده و جذاب. وقتی بازی می‌کنی، شاید فقط به امتیاز و مراحل فکر کنی؛ اما
+        پشت صحنه هر بازی، یک تیم (یا حتی یک نفر) نشسته که:
+    </p>
+    <ul>
+        <li>قوانین بازی را طراحی کرده (بازیکن چطور حرکت کند، چه چیزی امتیاز دارد، کی ببازد یا ببرد)</li>
+        <li>شخصیت‌ها، محیط و مراحل را طراحی کرده است</li>
+        <li>با کمک کدنویسی، همه این‌ها را زنده و قابل کنترل کرده است</li>
+        <li>بازی را روی موبایل، کامپیوتر یا وب قابل اجرا کرده است</li>
+    </ul>
+
+    <p>
+        بازی‌سازی فقط مخصوص حرفه‌ای‌ها و شرکت‌های بزرگ نیست. امروز خیلی‌ها
+        <strong>تنها یا با یک تیم کوچک</strong> بازی‌های ساده و جذاب می‌سازند و آن‌ها را در
+        فروشگاه‌هایی مثل Google Play و App Store منتشر می‌کنند و حتی از آن
+        <strong>درآمد دلاری</strong> به دست می‌آورند.
+    </p>
+
+    <div class="highlight-box">
+        <strong>این کلاس برای چه کسانی مناسب است؟</strong>
+        <ul>
+            <li>کسانی که عاشق بازی‌های ویدیویی هستند و می‌خواهند پشت‌صحنه ساخت بازی را یاد بگیرند</li>
+            <li>دانش‌آموزان و دانشجوهایی که دوست دارند یک مهارت جذاب و متفاوت یاد بگیرند</li>
+            <li>افرادی که به هنر، داستان‌نویسی یا طراحی علاقه دارند و می‌خواهند ایده‌هایشان را تبدیل به بازی کنند</li>
+            <li>کسانی که کمی برنامه‌نویسی بلدند و می‌خواهند آن را وارد دنیای بازی کنند</li>
+            <li>حتی کسانی که هیچ تجربه‌ای در برنامه‌نویسی ندارند ولی پشتکار و حوصله یادگیری دارند</li>
+        </ul>
+    </div>
+
+    <h2>در این کلاس چه چیزهایی یاد می‌گیری؟</h2>
+    <ul>
+        <li>آشنایی با مفهوم بازی و اجزای اصلی آن (مکانیک، مرحله، سختی، امتیاز و ...)</li>
+        <li>معرفی موتورهای بازی‌سازی رایج و انتخاب یک موتور مناسب برای شروع</li>
+        <li>کار با محیط موتور بازی‌سازی (ساخت پروژه جدید، صحنه‌ها، آبجکت‌ها و ...)</li>
+        <li>طراحی یک کاراکتر ساده و حرکت دادن آن در محیط بازی</li>
+        <li>افزودن موانع، سکه، امتیاز و سیستم باخت/برد به بازی</li>
+        <li>آشنایی با مفاهیم ساده برنامه‌نویسی مخصوص بازی‌سازی (شرط، حلقه، برخورد، گرانش و ...)</li>
+        <li>ساخت حداقل یک بازی دو‌بعدی ساده (مثل بازی پلتفرمر یا بازی جمع‌کردن سکه)</li>
+        <li>نکات اولیه برای انتشار بازی روی موبایل یا کامپیوتر</li>
+    </ul>
+
+    <div class="highlight-box">
+        <strong>مزایای شرکت در این دوره</strong>
+        <ul>
+            <li>آموزش قدم‌به‌قدم با زبان ساده و قابل فهم</li>
+            <li>پروژه‌محور بودن دوره (به‌جای تئوری خسته‌کننده، بیشتر با انجام دادن یاد می‌گیری)</li>
+            <li>دریافت فایل‌ها، پروژه نمونه و منابع برای تمرین بیشتر</li>
+            <li>پشتیبانی و پاسخ به سوالات در طول دوره</li>
+            <li>کمک به ساخت اولین بازی شخصی خودت در پایان دوره</li>
+        </ul>
+    </div>
+
+    <h2>مشخصات دوره</h2>
+    <div class="highlight-box">
+        <strong>مدرس:</strong> نام مدرس بازی‌سازی خودت را اینجا بنویس  
+        <br>
+        <strong>مدت دوره:</strong> ۱۰ جلسه / هفته‌ای ۲ جلسه  
+        <br>
+        <strong>محل برگزاری:</strong> آنلاین (کلاس مجازی + امکان دیدن ضبط جلسات)  
+        <br>
+        <strong>پیش‌نیاز:</strong> آشنایی خیلی ساده با کامپیوتر، بقیه چیزها را در کلاس یاد می‌گیری  
+        <br>
+        <strong>هزینه دوره:</strong> ۳٬۵۰۰٬۰۰۰ تومان
+    </div>
+
+
+    <div class="form-box">
+        <h2>فرم ثبت‌نام در کلاس بازی‌سازی</h2>
+        <p class="small-text">
+            برای شرکت در کلاس، فرم زیر را با دقت پر کن تا برای هماهنگی زمان و نحوه برگزاری با تو تماس بگیریم.
+        </p>
+
+        <form>
+            <label for="name">نام و نام خانوادگی *</label>
+            <input type="text" id="name" name="name" placeholder=" " required>
+<label for="phone">شماره موبایل *</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="age">سن</label>
+            <input type="number" id="age" name="age" placeholder=" ">
+
+            <label for="city">شهر محل سکونت *</label>
+            <input type="text" id="city" name="city" placeholder="مثلاً: مشهد" required>
+
+            <label for="level">سطح آشنایی شما با برنامه‌نویسی</label>
+            <select id="level" name="level">
+                <option value="none">هیچ آشنایی ندارم</option>
+                <option value="little">فقط کمی آشنا هستم</option>
+                <option value="medium">در حد متوسط (مثلاً با یک زبان کار کردم)</option>
+                <option value="good">خوب بلدم و می‌خواهم وارد بازی‌سازی شوم</option>
+            </select>
+
+            <label for="goal">چرا می‌خواهی بازی‌سازی یاد بگیری؟ *</label>
+            <textarea id="goal" name="goal" placeholder="مثلاً: می‌خوام ایده‌های بازی خودم را بسازم، بعداً بازی‌هام را در گوگل‌پلی منتشر کنم و ازشون درآمد داشته باشم..." required></textarea>
+
+
+            <button type="submit" class="btn">ارسال فرم ثبت‌نام</button>
+        </form>
+
+        <p class="small-text">
+            بعد از ارسال فرم، حداکثر ظرف ۲۴ ساعت از طریق تماس یا پیام در واتساپ با شما ارتباط گرفته می‌شود.
+        </p>
+    </div>
+
+    <div class="info-bar">
+        <span>مناسب برای علاقه‌مندان به بازی و دنیای گیم</span>
+        <span> بدون نیاز به تجربه قبلی در برنامه‌نویسی</span>
+        <span> ساخت اولین بازی شخصی در پایان دوره</span>
+    </div>
+
+</div>
+
+
+</body>
+</html>

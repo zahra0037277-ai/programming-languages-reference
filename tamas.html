@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>تماس با ما</title>
+<style>
+  
+  body {
+    margin: 0;
+    font-family: 'Vazir', sans-serif; 
+    background: linear-gradient(135deg, #3f819d, #6da9bc, #75aec1);
+    background-size: 200% 200%;
+    animation: gradientBG 25s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #424242;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 25px 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+    text-align: center;
+    width: 90%;
+    max-width: 550px; 
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #008939;
+    font-weight: 700; 
+  }
+
+ 
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea,
+  .contact-form button {
+    width: calc(100% - 20px); 
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    background-color: #fefefe;
+    color: #424242;
+    font-size: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .contact-form textarea {
+    min-height: 100px; 
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #999;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #4c81af; 
+    box-shadow: 0 0 6px rgba(102, 187, 106, 0.3);
+    outline: none;
+  }
+
+  .contact-form button {
+    background-color: #4c81af;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    width: 130px;
+    padding: 10px 12px; 
+    margin-top: 8px; 
+    box-shadow: 0 3px 6px #4c81af ;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 6px; 
+  }
+
+  .contact-form button:hover {
+    background-color: #4c81af; 
+    transform: translateY(-1px);
+  }
+
+  .contact-info {
+    margin-top: 20px; 
+    font-size: 1em; 
+    line-height: 1.7;
+    text-align: right;
+  }
+
+  .contact-info p {
+    margin: 8px 0; 
+  }
+
+  .contact-info a {
+    color: #42a5f5; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .contact-info a:hover {
+    color: #1e88e5; 
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>تماس با ما</h1>
+  <form class="contact-form">
+    <input type="text" placeholder="نام شما" />
+    <input type="email" placeholder="ایمیل شما" />
+    <input type="text" placeholder="موضوع" />
+    <textarea placeholder="پیام شما"></textarea>
+    <button type="submit">ارسال</button>
+  </form>
+  <div class="contact-info">
+    <p>ایمیل:<a>zahra3770037@gmail.com</a></p>
+    <p>تلفن: <a>+9837 377 0037</a></p>
+    <p>آدرس: ارومیه , خیابان برنامه‌نویسان، کوچه کدنویسان</p>
+  </div>
+</div>
+
+</body>
+</html>

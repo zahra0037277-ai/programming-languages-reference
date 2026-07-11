@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>مرجع کامل C#</title>
+<style>
+    body{font-family:Tahoma, Arial, sans-serif;background:#f4f5f7;margin:0} /* اضافه کردن فونت جایگزین برای نمایش بهتر */
+    header{background:#68217A;color:#fff;padding:20px;text-align:center;font-size:28px;font-weight:bold}
+    .container{width:80%;margin:20px auto;background:#fff;padding:25px;border-radius:10px;box-shadow:0 0 10px #c9c9c9; padding-bottom: 100px;} /* اضافه کردن پدینگ پایین برای اینکه دکمه روی متن نیاید */
+    h2{color:#68217A;margin-top:25px}
+    .section{background:#efe3f2;padding:20px;border-radius:8px;margin-top:10px}
+    code{background:#222;color:#00ff55;padding:10px;display:block;direction:ltr;border-radius:6px; white-space: pre-wrap;}
+    a{color:#1a73e8;text-decoration:none;font-weight:bold}
+
+    
+    .purchase-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px 0;
+        text-align: center;
+        box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-buy {
+        background: linear-gradient(135deg, #68217A, #8e44ad); 
+        color: white;
+        border: none;
+        padding: 15px 50px;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 50px; 
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 15px rgba(104, 33, 122, 0.4);
+    }
+
+    .btn-buy:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 6px 20px rgba(104, 33, 122, 0.6);
+    }
+
+    .btn-buy:active {
+        transform: scale(0.95); 
+    }
+</style>
+</head>
+<body>
+
+<header>مرجع کامل C#</header>
+
+<div class="container">
+
+<h2>C# چیست؟</h2>
+<div class="section">
+C# زبان رسمی مایکروسافت برای توسعه ویندوز، وب، بازی‌سازی (Unity) و بک‌اند با ASP.NET Core است.
+</div>
+
+<h2>کاربردهای C#</h2>
+<div class="section">
+<ul>
+<li>توسعه بازی با Unity</li>
+<li>ساخت وب‌سرویس با ASP.NET Core</li>
+<li>برنامه‌نویسی ویندوز (WPF – WinForms)</li>
+<li>سیستم‌های سازمانی</li>
+</ul>
+</div>
+
+<h2>فریم‌ورک‌ها</h2>
+<div class="section">
+<ul>
+<li>ASP.NET Core</li>
+<li>Unity</li>
+<li>Entity Framework Core</li>
+</ul>
+</div>
+
+<h2>منابع یادگیری</h2>
+<div class="section">
+<ul>
+<li><a target="_blank">Microsoft Docs</a></li>
+<li>C# in Depth</li>
+<li>Pluralsight</li>
+</ul>
+</div>
+
+<h2>مثال ساده</h2>
+<div class="section">
+<code>
+using System;
+class Program {
+  static void Main() {
+    Console.WriteLine("Hello Zahra!");
+  }
+}
+</code>
+</div>
+
+</div> 
+
+<div class="purchase-container">
+    <button class="btn-buy" onclick="checkCSharpLogin()">خرید دوره آموزشی C#  <br> 5600000</button>
+</div>
+
+<script>
+    function checkCSharpLogin() {
+        
+        const isLogged = localStorage.getItem("csharp_isLoggedIn");
+
+        if (isLogged === "true") {
+           
+            alert("خرید دوره C# با موفقیت انجام شد! دوره در پنل شما فعال شد.");
+        } else {
+            
+            alert("برای خرید دوره، ابتدا باید در سایت عضو شوید.");
+           
+            window.location.href = "sabtnam.html"; 
+        }
+    }
+</script>
+
+</body>
+</html>

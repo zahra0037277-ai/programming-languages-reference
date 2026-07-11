@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>منوی زبان‌ها </title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #549ab8, #85c2d7, #001620);
+    background-size: 200% 200%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .meno {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    perspective: 1000px;
+  }
+
+  a.lang {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 35px;
+    font-weight: 800;
+    font-size: 17px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), inset 0 0 8px rgba(255, 255, 255, 0.4);
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+
+  a.lang:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), inset 0 0 12px rgba(255, 255, 255, 0.6);
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .python { background: linear-gradient(135deg, #3876a9, #00a0dc); }
+  .python:hover { background: linear-gradient(135deg, #3a88a4, #306998); }
+  
+  .java { background: linear-gradient(135deg, #f89820, #ffa040); }
+  .java:hover { background: linear-gradient(135deg, #ffa040, #f89820); }
+
+  .js { background: linear-gradient(135deg, #f0db4f, #fff280); color: #333; }
+  .js:hover { background: linear-gradient(135deg, #fff280, #f0db4f); color: #222; }
+
+  .c { background: linear-gradient(135deg, #66008b, #9100bd); }
+  .c:hover { background: linear-gradient(135deg, #66008b, #9100bd); }
+
+  .cpp { background: linear-gradient(135deg, #00487f, #016199); }
+  .cpp:hover { background: linear-gradient(135deg, #00487f, #0063ae); }
+
+  .php { background: linear-gradient(135deg, #8866a8, #8e6fb9); }
+  .php:hover { background: linear-gradient(135deg, #8866a8, #6e4f8b); }
+
+  .silver-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.071) 0%, rgba(255, 255, 255, 0.329) 50%, rgba(255, 255, 255, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    pointer-events: none;
+  }
+
+</style>
+</head>
+<body>
+<div class="meno">
+  <a href="python.html"  class="lang python silver-shine">پایتون</a>
+  <a href="java.html" class="lang java silver-shine">جاوا</a>
+  <a href="javascript.html" class="lang js silver-shine">جاوااسکریپت</a>
+  <a href="c.html" class="lang c silver-shine">سی</a>
+  <a href="c++.html" class="lang cpp silver-shine">سی‌پلاس‌پلاس</a>
+  <a href="php.html" class="lang php silver-shine">پی‌اچ‌پی</a>
+</div>
+</body>
+</html>
